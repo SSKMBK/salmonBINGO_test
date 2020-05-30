@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Salmon-BINGO</title>
+  <link rel="stylesheet" type="text/css" href="css/app.css" />
+
+  <meta name="viewport"
+  content="width=320",
+  height=480,
+  initial-scale=1.0,
+  minimum-scale=1.0,
+  maximum-scale=1.0,
+  user-scalable=no">
+
+  
+
+
+</head>
+
+<body>
+
+  <script src="js/app.js"></script>
+  <script src="js/reloadbutton.js"></script>
+  <script src="js/onclick_color.js"></script>
+
+
+  <!-- grid開始のdiv -->
+  <div class="GRID">
+
+
+    <version id="version">サーモンビンゴ作成機<br>Alpha_0.1.3</version>
+  
+<textarea id="update" rows="10" cols=60 readonly>
+<更新履歴＆注意書き>                  
+※リセットを押すとビンゴ表すべてがリセットされます
+※正常に表示されない場合、キャッシュの削除をお試しください
+            
+☆Alpha_0.1.1~3
+軽微なバグ修正
+更新履歴＆注意書き欄に書き加え
+                                 
+☆Alpha_0.1.0
+ボタンを押したら色が変わるようになった
+白→橙→白→橙
+
+☆Pre-Alpha_0.1.5
+画面に合わせたページサイズで表示されるようになった
+ビンゴ表を成形した
+
+☆Pre-Alpha_0.1.4
+ビンゴ表の枠が最初から表示されるようになった
+更新報告欄がかっこいい感じになった
+
+☆Pre-Alpha_0.1.3
+作成ボタンを押したらリセットボタンに変身するようになった
+
+☆Pre-Alpha_0.1.2
+一度押した作成ボタンを押せないように
+リセットボタンを追加
+
+☆Pre-Alpha_0.1.1
+武器重複をなくした(はず)</textarea>
+    
+    <button type="submit" id="create" onClick="randomise();createreload()">作成</button>
+  
+    <div id="reload"></div>
+  
+    <button type="submit" id="weapon0" class="buttons" onClick="onclick_color(style,'weapon0')"></button>
+    <button type="submit" id="weapon1" class="buttons" onClick="onclick_color(style,'weapon1')"></button>
+    <button type="submit" id="weapon2" class="buttons" onClick="onclick_color(style,'weapon2')"></button>
+    <button type="submit" id="weapon3" class="buttons" onClick="onclick_color(style,'weapon3')"></button>
+    <button type="submit" id="weapon4" class="buttons" onClick="onclick_color(style,'weapon4')"></button>
+    <button type="submit" id="weapon5" class="buttons" onClick="onclick_color(style,'weapon5')"></button>
+    <button type="submit" id="weapon6" class="buttons" onClick="onclick_color(style,'weapon6')"></button>
+    <button type="submit" id="weapon7" class="buttons" onClick="onclick_color(style,'weapon7')"></button>
+    <button type="submit" id="weapon8" class="buttons" onClick="onclick_color(style,'weapon8')"></button>
+    <button type="submit" id="weapon9" class="buttons" onClick="onclick_color(style,'weapon9')"></button>
+    <button type="submit" id="weapon10" class="buttons" onClick="onclick_color(style,'weapon10')"></button>
+    <button type="submit" id="weapon11" class="buttons" onClick="onclick_color(style,'weapon11')"></button>
+    <button type="submit" id="bear_weapon" class="buttons" onClick="onclick_color(style,'bear_weapon')">クマ武器</button>
+    <button type="submit" id="weapon12" class="buttons" onClick="onclick_color(style,'weapon12')"></button>
+    <button type="submit" id="weapon13" class="buttons" onClick="onclick_color(style,'weapon13')"></button>
+    <button type="submit" id="weapon14" class="buttons" onClick="onclick_color(style,'weapon14')"></button>
+    <button type="submit" id="weapon15" class="buttons" onClick="onclick_color(style,'weapon15')"></button>
+    <button type="submit" id="weapon16" class="buttons" onClick="onclick_color(style,'weapon16')"></button>
+    <button type="submit" id="weapon17" class="buttons" onClick="onclick_color(style,'weapon17')"></button>
+    <button type="submit" id="weapon18" class="buttons" onClick="onclick_color(style,'weapon18')"></button>
+    <button type="submit" id="weapon19" class="buttons" onClick="onclick_color(style,'weapon19')"></button>
+    <button type="submit" id="weapon20" class="buttons" onClick="onclick_color(style,'weapon20')"></button>
+    <button type="submit" id="weapon21" class="buttons" onClick="onclick_color(style,'weapon21')"></button>
+    <button type="submit" id="weapon22" class="buttons" onClick="onclick_color(style,'weapon22')"></button>
+    <button type="submit" id="weapon23" class="buttons" onClick="onclick_color(style,'weapon23')"></button>
+
+    
+    <button type="submit" id="save" onClick="savebutton()">保存</button>
+    <button type="submit" id="restoration" onClick="restorationbutton()">復元</button>
+    <button type="submit" id="delete" onClick="deletebutton()">削除</button>
+  
+    <textarea id="save_weapondata" rows="10" cols=60 readonly></textarea>
+    <script type="text/javascript">
+
+      document.getElementById("save_weapondata").innerHTML=localStorage.getItem('weapondata_storage',);
+
+    </script>
+
+
+    <div id="weapon0" style="position:absolute; left:0px;top:0px"></div>
+  </div>
+  <!-- grid終了のdiv -->
+
+</body>
+</html>
