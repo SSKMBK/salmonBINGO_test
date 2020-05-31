@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+
   <meta charset="UTF-8">
   <title>Salmon-BINGO</title>
   <link rel="stylesheet" type="text/css" href="css/app.css" />
@@ -13,15 +14,12 @@
   maximum-scale=1.0,
   user-scalable=no">
 
-  
-
-
 </head>
 
 <body>
 
   <script src="js/app.js"></script>
-  <script src="js/reloadbutton.js"></script>
+  <script src="js/updatebutton.js"></script>
   <script src="js/onclick_color.js"></script>
 
 
@@ -29,14 +27,18 @@
   <div class="GRID">
 
 
-    <version id="version">サーモンビンゴ作成機<br>Alpha_0.1.4_pre</version>
+    <version id="version">サーモンビンゴ作成機<br>β_0.1.5</version>
   
 <textarea id="update" rows="10" cols=60 readonly>
-<更新履歴＆注意書き>                  
-※リセットを押すとビンゴ表すべてがリセットされます
+<更新履歴＆注意書き>
 ※正常に表示されない場合、キャッシュの削除をお試しください
 
-☆Alpha_0.1.4 2020-5-30
+☆β_0.1.5 2020-05-30
+・データの保存、復元、削除がちゃんとできるようになった
+・保存済みデータの見やすさが少しましになった
+・作成ボタンや復元ボタンでそのまま内容を書き換えられるようになったので、リロードボタンはなくなった
+
+☆Alpha_0.1.4_pre 2020-05-30
 データの保存、復元ができるようになった
 データ削除、書き換え機能などはまだないです
 
@@ -66,8 +68,7 @@
 ☆Pre-Alpha_0.1.1
 武器重複をなくした(はず)</textarea>
     
-    <button type="submit" id="create" onClick="randomise();createreload()">作成</button>
-  
+    <button type="submit" id="create" onClick="randomise()">作成</button>
     <div id="reload"></div>
   
     <button type="submit" id="weapon0" class="buttons" onClick="onclick_color(style,'weapon0')"></button>
@@ -96,20 +97,29 @@
     <button type="submit" id="weapon22" class="buttons" onClick="onclick_color(style,'weapon22')"></button>
     <button type="submit" id="weapon23" class="buttons" onClick="onclick_color(style,'weapon23')"></button>
 
-    
+    <savearea id="savearea">ビンゴ表保存/復元/削除</savearea>
     <button type="submit" id="save" onClick="savebutton()">保存</button>
     <button type="submit" id="restoration" onClick="restorationbutton()">復元</button>
     <button type="submit" id="delete" onClick="deletebutton()">削除</button>
   
+    <button type="submit" id="updatebutton" onClick="updatebutton()">更新履歴(クリックで展開)</button>
+  
     <textarea id="save_weapondata" rows="10" cols=60 readonly></textarea>
     <script type="text/javascript">
 
-      document.getElementById("save_weapondata").innerHTML=localStorage.getItem('weapondata_storage',);
+      var local_list=JSON.parse(localStorage.getItem('salmonrandomweapondata_storage'))
+
+      list_message = "[保存済みデータ]\n"+local_list[0]+","+local_list[1]+","+local_list[2]+","+local_list[3]
+      +","+local_list[4]+","+local_list[5]+","+local_list[6]+","+local_list[7]+","+local_list[8]+","
+      +local_list[9]+","+local_list[10]+","+local_list[11]+","+local_list[12]+","+local_list[13]+","
+      +local_list[14]+","+local_list[15]+","+local_list[16]+","+local_list[17]+","+local_list[18]+","
+      +local_list[19]+","+local_list[20]+","+local_list[21]+","+local_list[22]+","+local_list[23];
+
+      document.getElementById("save_weapondata").innerHTML=list_message;
 
     </script>
 
 
-    <div id="weapon0" style="position:absolute; left:0px;top:0px"></div>
   </div>
   <!-- grid終了のdiv -->
 
