@@ -1,7 +1,25 @@
 .GRID {
   display: grid;
   grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
-  grid-template-rows: 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw;
+  grid-template-rows: 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw;
+}
+
+#updatebutton{
+  color:black;
+  background:white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 17;
+  grid-row-end: 18;
+}
+
+#savearea{
+  font-size: 4vw;
+  grid-column-start: 1;
+  grid-column-end:5;
+  grid-row-start:13;
+  grid-row-end:14;
+  align-self: end;
 }
 
 #version{
@@ -35,7 +53,7 @@
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 14;
-  grid-row-end: 15;
+  grid-row-end: 16;
 }
 
 #save{
@@ -44,7 +62,7 @@
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 14;
-  grid-row-end: 15;
+  grid-row-end: 16;
 }
 
 #delete{
@@ -53,7 +71,7 @@
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 14;
-  grid-row-end: 15;
+  grid-row-end: 16;
 }
 
 #save_weapondata{
@@ -61,7 +79,7 @@
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 14;
-  grid-row-end: 15;
+  grid-row-end: 16;
 
 }
 
