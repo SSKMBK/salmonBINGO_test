@@ -4,24 +4,6 @@
   grid-template-rows: 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw;
 }
 
-#updatebutton{
-  color:black;
-  background:white;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 17;
-  grid-row-end: 18;
-}
-
-#savearea{
-  font-size: 4vw;
-  grid-column-start: 1;
-  grid-column-end:5;
-  grid-row-start:13;
-  grid-row-end:14;
-  align-self: end;
-}
-
 #version{
   font-size: 3vw;
   grid-column-start: 1;
@@ -30,239 +12,125 @@
   grid-row-end: 2;
 }
 
+#create{
+  font-size: 3vw;
+  color:black;
+  background:#ffefcf;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: solid 2px #ffa000;
+  outline:none;
+}
+
+#create:active{
+  background:#ffdab1;
+  border: solid 2px #ff8c00;
+  outline:none;
+}
+
 #update{
-  padding: 0.5em;
+  resize: none;
+  font-family: メイリオ;
+  font-size: 2.5vw;
+  padding: 0.5em; /*余白*/
   grid-column-start: 3; 
   grid-column-end: 6; 
   grid-row-start: 1; 
   grid-row-end: 3; 
 }
 
-#create{
-  color:black;
-  background:white;
+#savearea_text{
+  font-size: 4vw;
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-end:5;
+  grid-row-start:13;
+  grid-row-end:14;
+  align-self: end;
 }
 
-#restoration{
+.saveareabuttons{
+  font-size: 3vw;
   color:black;
-  background:white;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 14;
-  grid-row-end: 16;
+  background:#ffefcf;
+  border: solid 1px #ff7100;
+  outline:none;
+}
+
+.saveareabuttons:active{
+  background:#ffdab1;
+  border: solid 1px #ff8c00;
+  outline:none;
 }
 
 #save{
-  color:black;
-  background:white;
+  
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 14;
   grid-row-end: 16;
 }
 
+#restoration{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 16;
+}
+
+#save_weapondata{
+  background:#fffae9;
+  resize: none;
+  padding: 0.5em;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 14;
+  grid-row-end: 16;
+  border: solid 1px #ff7100;
+  outline:none;
+  font-family:メイリオ;
+}
+
 #delete{
-  color:black;
-  background:white;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 14;
   grid-row-end: 16;
 }
 
-#save_weapondata{
-
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 14;
-  grid-row-end: 16;
-
-}
-
-.buttons{
-  color:black;
-  background:white;
-  width:18vw;
-  height:18vw;
-}
-
-#weapon0{
+#updatebutton{
+  font-size:2.8vw;
+  color:#654f35;
+  background:#fffae9;
   grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  
+  grid-column-end:3 ;
+  grid-row-start: 17;
+  grid-row-end: 18;
+  border: solid 1px #654f35;/*線色*/
+  outline:none;
 }
 
-
-#weapon1{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 5;
+#QandAbutton{
+  font-size:2.8vw;
+  color:#654f35;
+  background:#fffae9;
+  grid-column-start: 3;
+  grid-column-end:5 ;
+  grid-row-start: 17;
+  grid-row-end: 18;
+  border: solid 1px #654f35;/*線色*/
+  outline:none;
 }
 
-#weapon2{
-  grid-column-start:3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-#weapon3{
-  grid-column-start:4;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-#weapon4{
-  grid-column-start:5;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-#weapon5{
-  grid-column-start:1;
-  grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 7;
-}
-
-#weapon6{
-  grid-column-start:2;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 7;
-}
-
-#weapon7{
-  grid-column-start:3;
-  grid-column-end: 4;
-  grid-row-start: 5;
-  grid-row-end: 7;
-}
-
-#weapon8{
-  grid-column-start:4;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 7;
-}
-
-#weapon9{
-  grid-column-start:5;
-  grid-column-end: 6;
-  grid-row-start: 5;
-  grid-row-end: 7;
-}
-
-#weapon10{
-  grid-column-start:1;
-  grid-column-end: 2;
-  grid-row-start: 7;
-  grid-row-end: 9;
-}
-
-#weapon11{
-  grid-column-start:2;
-  grid-column-end: 3;
-  grid-row-start: 7;
-  grid-row-end: 9;
-}
-
-#bear_weapon{
-  grid-column-start:3;
-  grid-column-end: 4;
-  grid-row-start: 7;
-  grid-row-end: 9;
-}
-
-#weapon12{
-  grid-column-start:4;
-  grid-column-end: 5;
-  grid-row-start: 7;
-  grid-row-end: 9;
-}
-
-#weapon13{
-  grid-column-start:5;
-  grid-column-end: 6;
-  grid-row-start: 7;
-  grid-row-end: 9;
-}
-
-#weapon14{
-  grid-column-start:1;
-  grid-column-end: 2;
-  grid-row-start: 9;
-  grid-row-end: 11;
-}
-
-#weapon15{
-  grid-column-start:2;
-  grid-column-end: 3;
-  grid-row-start: 9;
-  grid-row-end: 11;
-}
-
-#weapon16{
-  grid-column-start:3;
-  grid-column-end: 4;
-  grid-row-start: 9;
-  grid-row-end: 11;
-}
-
-#weapon17{
-  grid-column-start:4;
-  grid-column-end: 5;
-  grid-row-start: 9;
-  grid-row-end: 11;
-}
-
-#weapon18{
-  grid-column-start:5;
-  grid-column-end: 6;
-  grid-row-start: 9;
-  grid-row-end: 11;
-}
-
-#weapon19{
-  grid-column-start:1;
-  grid-column-end: 2;
-  grid-row-start: 11;
-  grid-row-end: 13;
-}
-
-#weapon20{
-  grid-column-start:2;
-  grid-column-end: 3;
-  grid-row-start: 11;
-  grid-row-end: 13;
-}
-
-#weapon21{
-  grid-column-start:3;
-  grid-column-end: 4;
-  grid-row-start: 11;
-  grid-row-end: 13;
-}
-
-#weapon22{
-  grid-column-start:4;
-  grid-column-end: 5;
-  grid-row-start: 11;
-  grid-row-end: 13;
-}
-
-#weapon23{
-  grid-column-start:5;
-  grid-column-end: 6;
-  grid-row-start: 11;
-  grid-row-end: 13;
+#closebutton{
+  font-size:2.8vw;
+  color:#654f35;
+  background:#fffae9;
+  grid-column-start: 5;
+  grid-column-end:6;
+  grid-row-start: 17;
+  grid-row-end: 18;
+  border: solid 1px #654f35;/*線色*/
+  outline:none;
 }
