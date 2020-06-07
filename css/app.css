@@ -20,13 +20,13 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: solid 2px #ffa000;
+  border: solid 1px #ffa000;
   outline:none;
 }
 
 #create:active{
   background:#ffdab1;
-  border: solid 2px #ff8c00;
+  border: solid 1px #ff8c00;
   outline:none;
 }
 
@@ -80,6 +80,7 @@
 }
 
 #save_weapondata{
+  font-size:2.5vw;
   background:#fffae9;
   resize: none;
   padding: 0.5em;
@@ -99,8 +100,17 @@
   grid-row-end: 16;
 }
 
+#qabuttons_text{
+  font-size: 4vw;
+  grid-column-start: 1;
+  grid-column-end:5;
+  grid-row-start:16;
+  grid-row-end:17;
+  align-self: end;
+}
+
 #updatebutton{
-  font-size:2.8vw;
+  font-size:2.5vw;
   color:#654f35;
   background:#fffae9;
   grid-column-start: 1;
@@ -112,7 +122,7 @@
 }
 
 #QandAbutton{
-  font-size:2.8vw;
+  font-size:2.5vw;
   color:#654f35;
   background:#fffae9;
   grid-column-start: 3;
@@ -124,7 +134,7 @@
 }
 
 #closebutton{
-  font-size:2.8vw;
+  font-size:2.5vw;
   color:#654f35;
   background:#fffae9;
   grid-column-start: 5;
