@@ -44,8 +44,6 @@ function savebutton(){
         localStorage.setItem('salmonrandomweapondata_storage', JSON.stringify(local_list))
         document.getElementById("save_weapondata").innerHTML=list_message;
 
-        console.log(local_list)
-
     }
 
     else{
