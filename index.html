@@ -8,8 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/weapons.css">
 
   <meta name="viewport"
-  content="width=320",
-  height=480,
+  content="width=device-width",
   initial-scale=1.0,
   minimum-scale=1.0,
   maximum-scale=1.0,
@@ -124,8 +123,9 @@
     <button type="submit" id="restoration" class="saveareabuttons" onClick="restorationbutton()">復元</button>
     <button type="submit" id="delete" class="saveareabuttons" onClick="deletebutton()">削除</button>
   
-    <button type="submit" id="updatebutton" onClick="updatebutton()">更新履歴(クリックで展開)</button>
-    <button type="submit" id="QandAbutton" onClick="QandAbutton()">Q&A(クリックで展開)</button>
+    <qabuttons id="qabuttons_text">Q&A等(クリックで展開)</qabuttons>
+    <button type="submit" id="updatebutton" onClick="updatebutton()">更新履歴</button>
+    <button type="submit" id="QandAbutton" onClick="QandAbutton()">Q&A</button>
     <button type="submit" id="closebutton" onClick="closebutton()">欄閉じ</button>
   
     <textarea id="save_weapondata" rows="10" cols=60 readonly></textarea>
