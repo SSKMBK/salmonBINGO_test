@@ -1,3 +1,7 @@
+html {
+  touch-action: manipulation;
+}
+
 .GRID {
   display: grid;
   grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
