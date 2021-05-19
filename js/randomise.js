@@ -9,130 +9,37 @@ function randomise(){
     "キャンピングシェルター","スパイガジェット","スプラローラー","カーボンローラー","ヴァリアブルローラー","ダイナモローラー","パブロ",
     "ホクサイ"];
 
+    var weapons=[]
+    
     //length=配列の要素数取得
     //splice=要素の取り除き
-    var sheet0 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet0 = weapon_list[sheet0];
-    weapon_list.splice(sheet0, 1);
+    
+    for (let count:0 ; count<24 ; 1)
+        var sheet_number = Math.floor(Math.random() * weapon_list.length)
+        weapons.push(weapon_list[sheet_number]);
+        weapon_list.splice(sheet_number, 1);
 
-    var sheet1 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet1 = weapon_list[sheet1];
-    weapon_list.splice(sheet1, 1);
-
-    var sheet2 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet2 = weapon_list[sheet2];
-    weapon_list.splice(sheet2, 1);
-
-    var sheet3 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet3 = weapon_list[sheet3];
-    weapon_list.splice(sheet3, 1);
-
-    var sheet4 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet4 = weapon_list[sheet4];
-    weapon_list.splice(sheet4, 1);
-
-    var sheet5 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet5 = weapon_list[sheet5];
-    weapon_list.splice(sheet5, 1);
-
-    var sheet6 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet6 = weapon_list[sheet6];
-    weapon_list.splice(sheet6, 1);
-
-    var sheet7 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet7 = weapon_list[sheet7];
-    weapon_list.splice(sheet7, 1);
-
-    var sheet8 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet8 = weapon_list[sheet8];
-    weapon_list.splice(sheet8, 1);
-
-    var sheet9 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet9 = weapon_list[sheet9];
-    weapon_list.splice(sheet9, 1);
-
-    var sheet10 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet10 = weapon_list[sheet10];
-    weapon_list.splice(sheet10, 1);
-
-    var sheet11 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet11 = weapon_list[sheet11];
-    weapon_list.splice(sheet11, 1);
-
-    var sheet12 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet12 = weapon_list[sheet12];
-    weapon_list.splice(sheet12, 1);
-
-    var sheet13 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet13 = weapon_list[sheet13];
-    weapon_list.splice(sheet13, 1);
-
-    var sheet14 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet14 = weapon_list[sheet14];
-    weapon_list.splice(sheet14, 1);
-
-    var sheet15 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet15 = weapon_list[Math.floor(Math.random() * weapon_list.length)];
-    weapon_list.splice(sheet15, 1);
-
-    var sheet16 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet16 = weapon_list[sheet16];
-    weapon_list.splice(sheet16, 1);
-
-    var sheet17 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet17 = weapon_list[sheet17];
-    weapon_list.splice(sheet17, 1);
-
-    var sheet18 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet18 = weapon_list[sheet18];
-    weapon_list.splice(sheet18, 1);
-
-    var sheet19 = Math.floor(Math.random() * weapon_list.length)   
-    weapon_sheet19 = weapon_list[sheet19];
-    weapon_list.splice(sheet19, 1);
-
-    var sheet20 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet20 = weapon_list[sheet20];
-    weapon_list.splice(sheet20, 1);
-
-    var sheet21 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet21 = weapon_list[sheet21];
-    weapon_list.splice(sheet21, 1);
-
-    var sheet22= Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet22 = weapon_list[sheet22];
-    weapon_list.splice(sheet22, 1);
-
-    var sheet23 = Math.floor(Math.random() * weapon_list.length)
-    weapon_sheet23 = weapon_list[sheet23];
-    weapon_list.splice(sheet23, 1);
-
-    var weapons = [weapon_sheet0,weapon_sheet1,weapon_sheet2,weapon_sheet3,weapon_sheet4,
-    weapon_sheet5,weapon_sheet6,weapon_sheet7,weapon_sheet8,weapon_sheet9,weapon_sheet10,
-    weapon_sheet11,weapon_sheet12,weapon_sheet13,weapon_sheet14,weapon_sheet15,weapon_sheet16,
-    weapon_sheet17,weapon_sheet18,weapon_sheet19,weapon_sheet20,weapon_sheet21,weapon_sheet22,
-    weapon_sheet23];
-
+    
     //document.getElementByID("ID").appendChildを使えば書き換えでない追加ができる
-    var weaponButton0=document.createTextNode(weapon_sheet0)
+    var weaponButton0=document.createTextNode(weapons[0])
     document.getElementById( "weapon0" ).innerHTML=weaponButton0.textContent;
     
-    var weaponButton1=document.createTextNode(weapon_sheet1)
+    var weaponButton1=document.createTextNode(weapons[1])
     document.getElementById( "weapon1" ).innerHTML=weaponButton1.textContent;
 
-    var weaponButton2=document.createTextNode(weapon_sheet2)
+    var weaponButton2=document.createTextNode(weapons[2])
     document.getElementById( "weapon2" ).innerHTML=weaponButton2.textContent;
 
-    var weaponButton3=document.createTextNode(weapon_sheet3)
+    var weaponButton3=document.createTextNode(weapons[3])
     document.getElementById( "weapon3" ).innerHTML=weaponButton3.textContent;
 
-    var weaponButton4=document.createTextNode(weapon_sheet4)
+    var weaponButton4=document.createTextNode(weapons[4])
     document.getElementById( "weapon4" ).innerHTML=weaponButton4.textContent;
 
-    var weaponButton5=document.createTextNode(weapon_sheet5)
+    var weaponButton5=document.createTextNode(weapons[5])
     document.getElementById( "weapon5" ).innerHTML=weaponButton5.textContent;
 
-    var weaponButton6=document.createTextNode(weapon_sheet6)
+    var weaponButton6=document.createTextNode(weapons[6])
     document.getElementById( "weapon6" ).innerHTML=weaponButton6.textContent;
 
     var weaponButton7=document.createTextNode(weapon_sheet7)
