@@ -27,4 +27,6 @@ function randomise(){
         var weaponButton0=document.createTextNode(weapons[counter])
         document.getElementById( "weapon0" ).innerHTML=weaponButton0.textContent;
     
+    
+    console(weapons)
 }
