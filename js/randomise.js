@@ -14,7 +14,7 @@ function randomise(){
     
     var weapons=[]
     
-    for(var counter=0,counter>24,1){
+    for(var counter=0,counter > 24,1){
         var sheet_number = Math.floor(Math.random() * weapon_list.length)
         var weaponspush = weapon_list[sheet_number];
         weapons.push(weaponspush);
