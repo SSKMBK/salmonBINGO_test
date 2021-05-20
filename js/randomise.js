@@ -29,5 +29,5 @@ function randomise(){
         document.getElementById( "weapon0" ).innerHTML=weaponButton0.textContent;
     }
     
-    console(weapons);
+    console.log(weapons);
 }
