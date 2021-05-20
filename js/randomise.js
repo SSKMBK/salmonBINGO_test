@@ -14,7 +14,7 @@ function randomise(){
     
     var weapons=[]
     
-    for(var counter=0;counter<24;1){
+    for(var counter=0;counter<24;counter++){
         var sheet_number = Math.floor(Math.random() * weapon_list.length)
         var weaponspush = weapon_list[sheet_number];
         weapons.push(weaponspush);
@@ -24,7 +24,7 @@ function randomise(){
     
     //document.getElementByID("ID").appendChildを使えば書き換えでない追加ができる
     
-    for(var counter=0;counter<24;1){
+    for(var counter=0;counter<24;counter++){
         var weaponButton0=document.createTextNode(weapons[counter])
         document.getElementById( "weapon0" ).innerHTML=weaponButton0.textContent;
     }
